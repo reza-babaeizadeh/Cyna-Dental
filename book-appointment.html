@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Cyna Dental | Richmond Hill Dental Appointments</title>
+    <meta name="description" content="Book your dental appointment at Cyna Dental in Richmond Hill. Easy online booking, flexible scheduling, and same-day emergency appointments available.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .text-gradient { background: linear-gradient(135deg, #00BCD4, #4FC3F7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 188, 212, 0.15); }
+        .btn-primary { background: linear-gradient(135deg, #00BCD4, #4FC3F7); }
+        .btn-primary:hover { background: linear-gradient(135deg, #0097A7, #0288D1); }
+        .form-input { transition: all 0.3s ease; }
+        .form-input:focus { border-color: #00BCD4; box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-gradient">Cyna Dental</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-cyan-600 transition-colors">About Us</a>
+                    <a href="team.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Our Team</a>
+                    <a href="services.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Services</a>
+                    <a href="kids-dentistry.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Kids Dentistry</a>
+                    <a href="cdcp.html" class="text-gray-700 hover:text-cyan-600 transition-colors">CDCP</a>
+                    <a href="book-appointment.html" class="text-cyan-600 font-medium">Book Appointment</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-cyan-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700">About Us</a>
+                <a href="team.html" class="block py-2 text-gray-700">Our Team</a>
+                <a href="services.html" class="block py-2 text-gray-700">Services</a>
+                <a href="kids-dentistry.html" class="block py-2 text-gray-700">Kids Dentistry</a>
+                <a href="cdcp.html" class="block py-2 text-gray-700">CDCP</a>
+                <a href="book-appointment.html" class="block py-2 text-cyan-600 font-medium">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Book Your Appointment</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Schedule your dental visit with our experienced team. We offer flexible scheduling and same-day emergency appointments.</p>
+                <nav class="text-gray-600 mt-4">
+                    <a href="index.html" class="hover:text-cyan-600">Home</a>
+                    <span class="mx-2">→</span>
+                    <span class="text-cyan-600">Book Appointment</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="card-hover bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Appointment Request Form</h2>
+                    <p class="text-gray-600">Please fill out the form below and we'll contact you within 24 hours to confirm your appointment.</p>
+                </div>
+                
+                <form id="appointment-form" class="space-y-6" data-form-type="appointment">
+                    <!-- Personal Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                                   placeholder="(905) 555-1234">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                                   placeholder="your.email@example.com">
+                        </div>
+                    </div>
+                    
+                    <!-- Patient Type -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-3">Patient Type *</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="patient-type" value="new" class="mr-3" required>
+                                <span>New Patient</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="patient-type" value="existing" class="mr-3" required>
+                                <span>Existing Patient</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Selection -->
+                    <div>
+                        <label for="service-select" class="block text-sm font-medium text-gray-700 mb-2">Service Needed *</label>
+                        <select id="service-select" name="service" required 
+                                class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                            <option value="">Select a service...</option>
+                            <option value="cleaning">Dental Cleaning & Exam</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="filling">Dental Filling</option>
+                            <option value="root-canal">Root Canal Therapy</option>
+                            <option value="crown">Dental Crown</option>
+                            <option value="bridge">Dental Bridge</option>
+                            <option value="extraction">Tooth Extraction</option>
+                            <option value="whitening">Teeth Whitening</option>
+                            <option value="veneers">Dental Veneers</option>
+                            <option value="implant">Dental Implant</option>
+                            <option value="orthodontics">Orthodontics</option>
+                            <option value="emergency">Emergency Care</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Preferred Date and Time -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="preferred-date" class="block text-sm font-medium text-gray-700 mb-2">Preferred Date *</label>
+                            <input type="date" id="preferred-date" name="preferred-date" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="preferred-time" class="block text-sm font-medium text-gray-700 mb-2">Preferred Time *</label>
+                            <select id="preferred-time" name="preferred-time" required 
+                                    class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                                <option value="">Select a time...</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="9:30 AM">9:30 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="11:30 AM">11:30 AM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="1:30 PM">1:30 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="2:30 PM">2:30 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="3:30 PM">3:30 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="4:30 PM">4:30 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                                <option value="5:30 PM">5:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Insurance Information -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-3">Insurance Coverage</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="insurance" value="cdcp" class="mr-3">
+                                <span>CDCP</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="insurance" value="private" class="mr-3">
+                                <span>Private Insurance</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="insurance" value="none" class="mr-3">
+                                <span>No Insurance</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Notes -->
+                    <div>
+                        <label for="notes" class="block text-sm font-medium text-gray-700 mb-2">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="4" 
+                                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                                  placeholder="Please let us know about any specific concerns, medical conditions, or special requests..."></textarea>
+                    </div>
+                    
+                    <!-- Consent -->
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" id="consent" name="consent" required class="mt-1">
+                        <label for="consent" class="text-sm text-gray-700">
+                            I consent to being contacted by Cyna Dental to confirm my appointment. I understand that this form is not a confirmed booking until I receive confirmation from the clinic. *
+                        </label>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all">
+                            Submit Appointment Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Other Ways to Book</h2>
+                <p class="text-xl text-gray-600">Prefer to speak with someone directly? We're here to help!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Call Us</h3>
+                    <p class="text-gray-600 mb-4">Speak directly with our friendly staff to schedule your appointment</p>
+                    <a href="tel:905-555-1234" class="text-cyan-600 font-semibold hover:text-cyan-700 text-lg">
+                        (905) 555-1234
+                    </a>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Email Us</h3>
+                    <p class="text-gray-600 mb-4">Send us an email and we'll get back to you within 24 hours</p>
+                    <a href="mailto:info@cynadental.ca" class="text-purple-600 font-semibold hover:text-purple-700">
+                        info@cynadental.ca
+                    </a>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Visit Us</h3>
+                    <p class="text-gray-600 mb-4">Stop by our office to book in person</p>
+                    <address class="text-green-600 font-semibold not-italic">
+                        2500 Richmond Hill Blvd<br>
+                        Suite 210<br>
+                        Richmond Hill, ON L4C 0X0
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Appointments -->
+    <section class="py-20 bg-gradient-to-br from-red-50 to-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="text-6xl mb-6">🚨</div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Need Emergency Care?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">We understand that dental emergencies can't wait. Call us immediately for same-day emergency appointments.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:905-555-1234" class="bg-red-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-700 transition-all">
+                    Emergency: (905) 555-1234
+                </a>
+                <a href="services.html" class="bg-white text-gray-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all">
+                    View Emergency Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-gradient mb-4">Cyna Dental</div>
+                    <p class="text-gray-300 mb-4">Modern dentistry for confident smiles in Richmond Hill.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-cyan-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-cyan-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-cyan-400">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-cyan-400">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-cyan-400">Services</a></li>
+                        <li><a href="team.html" class="text-gray-300 hover:text-cyan-400">Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="kids-dentistry.html" class="text-gray-300 hover:text-cyan-400">Kids Dentistry</a></li>
+                        <li><a href="cdcp.html" class="text-gray-300 hover:text-cyan-400">CDCP Coverage</a></li>
+                        <li><a href="book-appointment.html" class="text-gray-300 hover:text-cyan-400">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-cyan-400">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>2500 Richmond Hill Blvd, Suite 210<br>Richmond Hill, ON L4C 0X0</p>
+                        <p>Phone: (905) 555-1234</p>
+                        <p>Email: info@cynadental.ca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Cyna Dental. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

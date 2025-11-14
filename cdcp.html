@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Dental Care Plan (CDCP) - Cyna Dental | Richmond Hill</title>
+    <meta name="description" content="Cyna Dental accepts CDCP coverage. Learn about eligibility, benefits, and how we help patients use their Canadian Dental Care Plan in Richmond Hill.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .text-gradient { background: linear-gradient(135deg, #00BCD4, #4FC3F7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 188, 212, 0.15); }
+        .btn-primary { background: linear-gradient(135deg, #00BCD4, #4FC3F7); }
+        .btn-primary:hover { background: linear-gradient(135deg, #0097A7, #0288D1); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-gradient">Cyna Dental</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-cyan-600 transition-colors">About Us</a>
+                    <a href="team.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Our Team</a>
+                    <a href="services.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Services</a>
+                    <a href="kids-dentistry.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Kids Dentistry</a>
+                    <a href="cdcp.html" class="text-cyan-600 font-medium">CDCP</a>
+                    <a href="book-appointment.html" class="btn-primary text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all">Book Appointment</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-cyan-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700">About Us</a>
+                <a href="team.html" class="block py-2 text-gray-700">Our Team</a>
+                <a href="services.html" class="block py-2 text-gray-700">Services</a>
+                <a href="kids-dentistry.html" class="block py-2 text-gray-700">Kids Dentistry</a>
+                <a href="cdcp.html" class="block py-2 text-cyan-600 font-medium">CDCP</a>
+                <a href="book-appointment.html" class="block py-2 btn-primary text-white px-4 py-2 rounded-full text-center">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Canadian Dental Care Plan (CDCP)</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Making dental care affordable and accessible for eligible Canadians. We're proud CDCP providers helping you maximize your benefits.</p>
+                <nav class="text-gray-600 mt-4">
+                    <a href="index.html" class="hover:text-cyan-600">Home</a>
+                    <span class="mx-2">→</span>
+                    <span class="text-cyan-600">CDCP</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is CDCP -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">What is the Canadian Dental Care Plan?</h2>
+                    <p class="text-lg text-gray-700 mb-6">The Canadian Dental Care Plan (CDCP) is a federal government initiative designed to make dental care more affordable for Canadians who don't have access to private dental insurance. It's one of the most significant expansions of public dental care in Canadian history.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">No Private Insurance Required</h4>
+                                <p class="text-gray-600">Designed specifically for Canadians without access to employer or private dental coverage.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Income-Based Coverage</h4>
+                                <p class="text-gray-600">Sliding scale benefits based on your family's adjusted net income.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Comprehensive Coverage</h4>
+                                <p class="text-gray-600">Covers preventive, basic, and major dental services including cleanings, fillings, and dentures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-red-100 to-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl">🇨🇦</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">A Proud CDCP Provider</h3>
+                        <p class="text-gray-600">Cyna Dental is committed to helping eligible patients access their CDCP benefits</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg">
+                            <div class="text-2xl">✅</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Direct Billing</h4>
+                                <p class="text-gray-600 text-sm">We handle all CDCP paperwork and billing directly</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg">
+                            <div class="text-2xl">📋</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Eligibility Assistance</h4>
+                                <p class="text-gray-600 text-sm">Help with understanding and verifying your CDCP eligibility</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg">
+                            <div class="text-2xl">💰</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">No Upfront Costs</h4>
+                                <p class="text-gray-600 text-sm">Covered services require no payment at time of treatment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Criteria -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">CDCP Eligibility Requirements</h2>
+                <p class="text-xl text-gray-600">To qualify for the Canadian Dental Care Plan, you must meet all of these criteria:</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Canadian Resident</h3>
+                    <p class="text-gray-600 text-sm">Must be a Canadian resident for tax purposes with a valid Social Insurance Number</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">No Dental Insurance</h3>
+                    <p class="text-gray-600 text-sm">Cannot have access to private or employer-sponsored dental insurance coverage</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">File Tax Returns</h3>
+                    <p class="text-gray-600 text-sm">Must have filed your tax return for the previous year to verify income eligibility</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Income Under $90,000</h3>
+                    <p class="text-gray-600 text-sm">Family's adjusted net income must be less than $90,000 per year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Details -->
+    <section class="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">CDCP Coverage Levels</h2>
+                <p class="text-xl text-gray-600">Your coverage percentage depends on your family's adjusted net income</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center border-4 border-green-200">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl text-white font-bold">100%</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Full Coverage</h3>
+                    <p class="text-gray-600 mb-4">CDCP covers 100% of eligible dental services</p>
+                    <div class="bg-green-100 p-4 rounded-lg">
+                        <p class="font-semibold text-green-800">Income Under $70,000</p>
+                        <p class="text-green-600 text-sm">No out-of-pocket costs for covered services</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center border-4 border-yellow-200">
+                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl text-white font-bold">60%</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Partial Coverage</h3>
+                    <p class="text-gray-600 mb-4">CDCP covers 60% of eligible dental services</p>
+                    <div class="bg-yellow-100 p-4 rounded-lg">
+                        <p class="font-semibold text-yellow-800">Income $70,000 - $79,999</p>
+                        <p class="text-yellow-600 text-sm">40% co-payment required</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center border-4 border-orange-200">
+                    <div class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl text-white font-bold">40%</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Basic Coverage</h3>
+                    <p class="text-gray-600 mb-4">CDCP covers 40% of eligible dental services</p>
+                    <div class="bg-orange-100 p-4 rounded-lg">
+                        <p class="font-semibold text-orange-800">Income $80,000 - $89,999</p>
+                        <p class="text-orange-600 text-sm">60% co-payment required</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-semibold mb-6">Covered Services Include:</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🦷</div>
+                            <h4 class="font-semibold mb-2">Preventive Care</h4>
+                            <p class="text-gray-600 text-sm">Cleanings, exams, X-rays, fluoride treatments</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🛠️</div>
+                            <h4 class="font-semibold mb-2">Basic Services</h4>
+                            <p class="text-gray-600 text-sm">Fillings, root canals, extractions</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🦴</div>
+                            <h4 class="font-semibold mb-2">Major Services</h4>
+                            <p class="text-gray-600 text-sm">Crowns, bridges, dentures</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🚨</div>
+                            <h4 class="font-semibold mb-2">Emergency Care</h4>
+                            <p class="text-gray-600 text-sm">Urgent dental treatments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Apply -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">How to Apply for CDCP</h2>
+                <p class="text-xl text-gray-600">Simple steps to access your dental care benefits</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white font-bold">1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Check Eligibility</h3>
+                    <p class="text-gray-600 text-sm">Visit the official CDCP website or contact Service Canada to verify your eligibility status</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white font-bold">2</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Submit Application</h3>
+                    <p class="text-gray-600 text-sm">Apply online through your My Service Canada Account or by calling 1-833-537-4342</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white font-bold">3</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Receive Benefits Card</h3>
+                    <p class="text-gray-600 text-sm">Once approved, you'll receive your CDCP benefit card in the mail within 2-3 weeks</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white font-bold">4</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Book Your Appointment</h3>
+                    <p class="text-gray-600 text-sm">Call Cyna Dental at (905) 555-1234 to schedule your appointment with CDCP coverage</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="card-hover bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-semibold mb-6 text-orange-600">Important Application Timeline</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange-600 mb-2">Now Open</div>
+                            <h4 class="font-semibold mb-2">Seniors 65+</h4>
+                            <p class="text-gray-600 text-sm">Applications currently being accepted</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange-600 mb-2">Now Open</div>
+                            <h4 class="font-semibold mb-2">Children Under 18</h4>
+                            <p class="text-gray-600 text-sm">Applications currently being accepted</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange-600 mb-2">May 2025</div>
+                            <h4 class="font-semibold mb-2">Adults 18-64</h4>
+                            <p class="text-gray-600 text-sm">Applications opening in phases</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Role -->
+    <section class="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">How Cyna Dental Helps</h2>
+                <p class="text-xl text-gray-600">We're here to make your CDCP experience seamless and stress-free</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h.01M15 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Eligibility Verification</h3>
+                    <p class="text-gray-600">We'll help verify your CDCP eligibility and coverage levels before your appointment, so there are no surprises.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Direct Billing</h3>
+                    <p class="text-gray-600">We bill CDCP directly for covered services, so you don't have to pay upfront and wait for reimbursement.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Treatment Planning</h3>
+                    <p class="text-gray-600">We'll create a comprehensive treatment plan that maximizes your CDCP benefits while addressing all your dental needs.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Application Support</h3>
+                    <p class="text-gray-600">Need help with your CDCP application? Our knowledgeable staff can guide you through the process.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Flexible Scheduling</h3>
+                    <p class="text-gray-600">We offer convenient appointment times to accommodate your schedule and ensure you can access your benefits.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Ongoing Support</h3>
+                    <p class="text-gray-600">We're here to answer questions and provide support throughout your CDCP coverage period.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Use Your CDCP Benefits?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Don't let dental care costs prevent you from maintaining optimal oral health. Our team is ready to help you access your CDCP coverage today.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="book-appointment.html" class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all">Book CDCP Appointment</a>
+                <a href="tel:905-555-1234" class="bg-gray-100 text-gray-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition-all">Call for CDCP Help</a>
+            </div>
+            <div class="mt-8">
+                <p class="text-gray-600 mb-4">Questions about CDCP? We're here to help!</p>
+                <a href="contact.html" class="text-cyan-600 font-medium hover:text-cyan-700">Contact Us for CDCP Support →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-gradient mb-4">Cyna Dental</div>
+                    <p class="text-gray-300 mb-4">Modern dentistry for confident smiles in Richmond Hill.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-cyan-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-cyan-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-cyan-400">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-cyan-400">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-cyan-400">Services</a></li>
+                        <li><a href="team.html" class="text-gray-300 hover:text-cyan-400">Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="kids-dentistry.html" class="text-gray-300 hover:text-cyan-400">Kids Dentistry</a></li>
+                        <li><a href="cdcp.html" class="text-gray-300 hover:text-cyan-400">CDCP Coverage</a></li>
+                        <li><a href="book-appointment.html" class="text-gray-300 hover:text-cyan-400">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-cyan-400">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>2500 Richmond Hill Blvd, Suite 210<br>Richmond Hill, ON L4C 0X0</p>
+                        <p>Phone: (905) 555-1234</p>
+                        <p>Email: info@cynadental.ca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Cyna Dental. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

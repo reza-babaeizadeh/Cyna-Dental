@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Cyna Dental | Experienced Richmond Hill Dentists</title>
+    <meta name="description" content="Meet our experienced dental team at Cyna Dental. Dr. Sarah Chen, Dr. Michael Rodriguez, and our caring support staff provide exceptional dental care in Richmond Hill.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .text-gradient { background: linear-gradient(135deg, #00BCD4, #4FC3F7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 188, 212, 0.15); }
+        .btn-primary { background: linear-gradient(135deg, #00BCD4, #4FC3F7); }
+        .btn-primary:hover { background: linear-gradient(135deg, #0097A7, #0288D1); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-gradient">Cyna Dental</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-cyan-600 transition-colors">About Us</a>
+                    <a href="team.html" class="text-cyan-600 font-medium">Our Team</a>
+                    <a href="services.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Services</a>
+                    <a href="kids-dentistry.html" class="text-gray-700 hover:text-cyan-600 transition-colors">Kids Dentistry</a>
+                    <a href="cdcp.html" class="text-gray-700 hover:text-cyan-600 transition-colors">CDCP</a>
+                    <a href="book-appointment.html" class="btn-primary text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all">Book Appointment</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-cyan-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700">About Us</a>
+                <a href="team.html" class="block py-2 text-cyan-600 font-medium">Our Team</a>
+                <a href="services.html" class="block py-2 text-gray-700">Services</a>
+                <a href="kids-dentistry.html" class="block py-2 text-gray-700">Kids Dentistry</a>
+                <a href="cdcp.html" class="block py-2 text-gray-700">CDCP</a>
+                <a href="book-appointment.html" class="block py-2 btn-primary text-white px-4 py-2 rounded-full text-center">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Meet Our Team</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Experienced dental professionals dedicated to providing exceptional care with a personal touch</p>
+                <nav class="text-gray-600 mt-4">
+                    <a href="index.html" class="hover:text-cyan-600">Home</a>
+                    <span class="mx-2">→</span>
+                    <span class="text-cyan-600">Our Team</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dentists Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Dentists</h2>
+                <p class="text-xl text-gray-600">Highly qualified dental professionals with years of experience</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                        <img src="resources/team-dentist-1.jpg" alt="Dr. Sarah Chen" class="w-48 h-48 rounded-full object-cover">
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Dr. Sarah Chen</h3>
+                            <p class="text-cyan-600 font-semibold mb-4">General Dentist, DDS</p>
+                            <div class="space-y-3 text-gray-600">
+                                <p><strong>Education:</strong> University of Toronto, DDS 2008</p>
+                                <p><strong>Specializations:</strong> Family Dentistry, Cosmetic Procedures, Root Canal Therapy</p>
+                                <p><strong>Languages:</strong> English, Mandarin, Cantonese</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-gray-700 mb-4">Dr. Chen brings over 15 years of dental experience to Cyna Dental. She is known for her gentle approach and commitment to patient comfort. Her expertise in family dentistry makes her a favorite among patients of all ages.</p>
+                        <p class="text-gray-700">"I believe every patient deserves personalized care that addresses their unique needs and concerns. Building trust through clear communication is the foundation of great dental relationships."</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                        <img src="resources/team-dentist-2.jpg" alt="Dr. Michael Rodriguez" class="w-48 h-48 rounded-full object-cover">
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Dr. Michael Rodriguez</h3>
+                            <p class="text-cyan-600 font-semibold mb-4">Pediatric Dentist, DDS</p>
+                            <div class="space-y-3 text-gray-600">
+                                <p><strong>Education:</strong> University of Western Ontario, DDS 2010</p>
+                                <p><strong>Specializations:</strong> Pediatric Dentistry, Orthodontics, Special Needs Care</p>
+                                <p><strong>Languages:</strong> English, Spanish</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-gray-700 mb-4">Dr. Rodriguez specializes in pediatric dentistry with additional training in child psychology and behavior management. He creates a fun, positive experience that helps children develop lifelong healthy dental habits.</p>
+                        <p class="text-gray-700">"Making dentistry fun and stress-free for children is my passion. When kids enjoy their dental visits, they're more likely to maintain good oral health throughout their lives."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Support Team</h2>
+                <p class="text-xl text-gray-600">Dedicated professionals who ensure your visit is comfortable and efficient</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl shadow-lg text-center">
+                    <img src="resources/team-hygienist-1.jpg" alt="Lisa Thompson" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Lisa Thompson</h3>
+                    <p class="text-cyan-600 font-medium mb-3">Dental Hygienist</p>
+                    <p class="text-gray-600 text-sm">With 8 years of experience, Lisa specializes in preventive care and patient education, helping patients maintain optimal oral health between visits.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl shadow-lg text-center">
+                    <img src="resources/team-assistant-1.jpg" alt="Maria Santos" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Maria Santos</h3>
+                    <p class="text-cyan-600 font-medium mb-3">Dental Assistant</p>
+                    <p class="text-gray-600 text-sm">Maria ensures smooth procedures and patient comfort. Her gentle approach and attention to detail make her an invaluable part of our clinical team.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl shadow-lg text-center">
+                    <img src="resources/team-hygienist-1.jpg" alt="Jennifer Park" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Jennifer Park</h3>
+                    <p class="text-cyan-600 font-medium mb-3">Office Manager</p>
+                    <p class="text-gray-600 text-sm">Jennifer coordinates appointments, handles insurance claims, and ensures our office runs smoothly. She's your go-to for scheduling and billing questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Culture Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Team Culture</h2>
+                    <p class="text-lg text-gray-700 mb-6">At Cyna Dental, we've built more than just a dental practice – we've created a family dedicated to your family's oral health. Our team culture is rooted in collaboration, continuous learning, and genuine care for every patient who walks through our doors.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Collaborative Care</h4>
+                                <p class="text-gray-600">Our dentists and support staff work together seamlessly to provide comprehensive care that addresses all your dental needs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Continuous Learning</h4>
+                                <p class="text-gray-600">We regularly attend training and conferences to stay current with the latest dental techniques and technologies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Patient-First Approach</h4>
+                                <p class="text-gray-600">Every decision we make is guided by what's best for our patients' health, comfort, and overall experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Awards & Recognition</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg">
+                            <div class="text-2xl">🏆</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Best Dental Practice 2024</h4>
+                                <p class="text-gray-600 text-sm">Richmond Hill Community Choice Awards</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg">
+                            <div class="text-2xl">⭐</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">5-Star Patient Reviews</h4>
+                                <p class="text-gray-600 text-sm">Consistently rated excellent across all platforms</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg">
+                            <div class="text-2xl">🎓</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Continuing Education Excellence</h4>
+                                <p class="text-gray-600 text-sm">Committed to ongoing professional development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Meet Our Team?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Experience personalized care from our experienced dental professionals. We're here to help you achieve and maintain optimal oral health.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="book-appointment.html" class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all">Book Your Appointment</a>
+                <a href="services.html" class="bg-gray-100 text-gray-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition-all">View Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-gradient mb-4">Cyna Dental</div>
+                    <p class="text-gray-300 mb-4">Modern dentistry for confident smiles in Richmond Hill.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-cyan-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-cyan-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-cyan-400">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-cyan-400">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-cyan-400">Services</a></li>
+                        <li><a href="team.html" class="text-gray-300 hover:text-cyan-400">Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="kids-dentistry.html" class="text-gray-300 hover:text-cyan-400">Kids Dentistry</a></li>
+                        <li><a href="cdcp.html" class="text-gray-300 hover:text-cyan-400">CDCP Coverage</a></li>
+                        <li><a href="book-appointment.html" class="text-gray-300 hover:text-cyan-400">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-cyan-400">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>2500 Richmond Hill Blvd, Suite 210<br>Richmond Hill, ON L4C 0X0</p>
+                        <p>Phone: (905) 555-1234</p>
+                        <p>Email: info@cynadental.ca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Cyna Dental. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
